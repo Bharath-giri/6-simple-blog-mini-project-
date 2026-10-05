@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "My First Blog",
+    "author": "Bharath",
+    "content": "Welcome to my first blog application!",
+    "createdAt": 1790524472161
+  },
+  {
+    "id": 2,
+    "title": "Learning Node.js",
+    "author": "Bharath",
+    "content": "Node.js allows us to run JavaScript on the server.",
+    "createdAt": 1790610872161
+  },
+  {
+    "id": 3,
+    "title": "Node Js",
+    "author": "Admin",
+    "owner": "admin",
+    "content": "New Node Js article",
+    "createdAt": 1790610949262
+  }
+]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to Simple Blog.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+    <title>Login - Simple Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📝 Simple Blog</h1>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+        <nav id="site-nav">
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <h2>Login</h2>
+
+            <form id="login-form">
+                <label for="username">Username</label>
+                <input id="username" type="text" placeholder="Enter username" autocomplete="username" required>
+
+                <label for="password">Password</label>
+                <div class="password-field">
+                    <input id="password" type="password" placeholder="Enter password" autocomplete="current-password" required>
+                    <button type="button" class="toggle-password" data-toggle-password="password" aria-label="Show password">Show</button>
+                </div>
+
+                <button class="publish-btn" type="submit">Login</button>
+            </form>
+
+            <p id="login-message" role="alert"></p>
+
+            <div class="demo-login">
+                <strong>Demo credentials</strong>
+                <p>Username: <code>admin</code></p>
+                <p>Password: <code>admin123</code></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

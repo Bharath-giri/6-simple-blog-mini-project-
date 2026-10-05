@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Write a new post on Simple Blog.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+    <title>New Post - Simple Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📝 Simple Blog</h1>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+        <nav id="site-nav">
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2 id="form-heading">Create New Post</h2>
+
+            <form id="post-form">
+                <label for="title">Title</label>
+                <input id="title" type="text" placeholder="Enter article title" maxlength="150" required>
+
+                <label for="author">Author</label>
+                <input id="author" type="text" placeholder="Enter author name" required>
+
+                <label for="content">Article Content</label>
+                <textarea id="content" rows="12" placeholder="Write your article here..." required></textarea>
+
+                <div class="form-actions">
+                    <a class="cancel-btn" href="index.html">Cancel</a>
+                    <button class="publish-btn" type="submit">Publish Post</button>
+                </div>
+            </form>
+
+            <p id="post-message" role="alert"></p>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
